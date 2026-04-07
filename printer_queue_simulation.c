@@ -1,3 +1,18 @@
+// ALGORITHM
+// - Start the program.
+// - Initialize front and rear as NULL.
+// - For Enqueue:
+//     Create a new node
+//     If queue is empty → set front = rear
+//     Else → add node at rear and move rear
+// - For Dequeue:
+//     If queue is empty → show underflow
+//     Else → remove node from front and move front
+// - For Display:
+//     Traverse from front to rear
+//     Print all elements
+// - End the program.
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -104,3 +119,26 @@ int main()
     
     return 0;
 }
+
+// Input:
+// 1.-->Enqueue function
+// 2.-->Dequeue function
+// 3.-->Display function
+
+// Enter your choice: 1
+// Enter the value: 10
+
+// Output:
+// Document entered successfully!!
+
+// Input:
+// Enter your choice: 3
+
+// Output:
+// 10<->
+
+// Input:
+// Enter your choice: 2
+
+// Output:
+// Document deleted successfully!!
