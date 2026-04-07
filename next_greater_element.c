@@ -1,3 +1,14 @@
+// ALGORITHM
+// - Read the array elements.
+// - Traverse each element one by one.
+// - Use a stack to store indices of elements.
+// - If current element is greater than stack top element:
+//     Assign it as the next greater
+//     Pop the stack
+// - Push current index into stack.
+// - For remaining elements in stack, assign -1.
+// - Print the result.
+
 #include<stdio.h>
 #include<stdlib.h>
 #define Max 101         
@@ -79,3 +90,18 @@ int main()
     nextGreater(array,len); // call function
     return 0;
 }
+
+// Input:
+// Enter the no.of values in the array: 5
+// Enter the value for 0 th value: 4
+// Enter the value for 1 th value: 5
+// Enter the value for 2 th value: 2
+// Enter the value for 3 th value: 25
+// Enter the value for 4 th value: 7
+
+// Output:
+// 4 -> 5
+// 5 -> 25
+// 2 -> 25
+// 25 -> -1
+// 7 -> -1
