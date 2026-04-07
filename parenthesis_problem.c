@@ -1,3 +1,15 @@
+// ALGORITHM 
+// - Read the expression.
+// - Traverse each character one by one.
+// - If it is an opening bracket → push to stack.
+// - If it is a closing bracket:
+//     Pop from stack
+//     Check if it matches
+//     If not → mark invalid
+// - After traversal:
+//     If all brackets matched → valid
+//     Else → invalid
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -101,3 +113,9 @@ int main()
     }
     return 0;
 }
+
+// Input:
+// Enter the expression : {[(a+b)*c]}
+
+// Output:
+// Valid Expression
