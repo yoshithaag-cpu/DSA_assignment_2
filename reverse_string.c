@@ -1,3 +1,10 @@
+// ALGORITHM
+// - Read the input string.
+// - Push all characters of the string into the stack.
+// - Pop characters one by one from the stack.
+// - Store popped characters in a new string (reverse).
+// - Print the reversed string.
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -41,7 +48,7 @@ char pop()
 int main()
 {
     char string[101];        
-    printf("Enter the string::");
+    printf("Enter the string:");
     fgets(string, sizeof(string), stdin);  
 
     string[strcspn(string, "\n")] = '\0';  // remove newline
@@ -52,6 +59,8 @@ int main()
     push(ptr);               // push full string into stack
     
     for(int i=0;i<strlen(string);i++)
+
+        
     {
         reverse[i]=pop();    // pop to get reversed order
     }
@@ -61,3 +70,9 @@ int main()
     printf("The reversered string of %s is %s",string,reverse);
     return 0;
 }
+
+// Input:
+// Enter the string: hello
+
+// Output:
+// The reversered string of hello is olleh
